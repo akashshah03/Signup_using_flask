@@ -1,0 +1,37 @@
+{%extends "layout.html"%}
+{% block body %}
+<div class="container">
+    <h1 style="text-align: center;">Register</h1>
+    <form action="" method="POST">
+        <h4>Full Name</h4>
+        <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <h4>E-mail</h4>
+        <div class="form-group">
+            <input type="email" name="username" class="form-control" placeholder="E-mail" required>
+        </div>
+        <h4>Password</h4>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+        </div>
+        <h4>Confirm Password</h4>
+        <div class="form-group">
+            <input type="password" name="confirm" class="form-control" placeholder="Confirm password" required>
+        </div>
+        <h4>Date of Birth</h4>
+        <div class="form-group">
+            <input type="date" name="name1" class="form-control" placeholder="Date of Birth" required >
+        </div>
+        <h4>Gender</h4>
+        <div class="form-group">
+            <select name="gender" required style="width: 100px;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Other</option>
+              </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
